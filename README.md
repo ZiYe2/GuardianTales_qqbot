@@ -26,7 +26,6 @@
 - pillow
 - matplotlib
 
-
 ### mirai
     有任何步骤失败请前往mirai论坛查找解决方法
     下载mirai console log（mcl）
