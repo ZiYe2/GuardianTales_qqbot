@@ -32,11 +32,11 @@
 ```bash
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
 ```
-#### 切换到mcl目录运行，命令一般为java -jar mcl.jar
-3. 使用 autoLogin 账号 密码 添加账号
-4. 在以下该路径创建文件并填写下面的配置
-5. 你的MiraiConsoleLoader\config\net.mamoe.mirai-api-http\setting.yml
-6. 重启mcl
+3. 切换到mcl目录运行，命令一般为java -jar mcl.jar
+4. 使用 autoLogin 账号 密码 添加账号
+5. 在以下该路径创建文件并填写下面的配置
+6. 你的MiraiConsoleLoader\config\net.mamoe.mirai-api-http\setting.yml
+7. 重启mcl
 ```yaml
 adapters:
   - http
