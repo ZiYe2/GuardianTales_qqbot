@@ -1,6 +1,9 @@
 from utils.BOTapi import *
 from router import router
 import time
+import os 
+if not os.path.exists("./image/guild"):
+    os.mkdir("./image/guild")
 
 while True:
     time.sleep(5)
