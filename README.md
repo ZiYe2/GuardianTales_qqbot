@@ -1,5 +1,5 @@
 # 坎公骑冠剑 qq机器人 
-## 基于mirai-api-http<br>写着玩的，不再维护！
+## 基于python和mirai-api-http<br>写着玩的，不再维护！
 <br>
 
 ### 主要功能：
