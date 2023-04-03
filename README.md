@@ -21,7 +21,7 @@
 - java 11/16
 <span style="font-size:66%;">（运行mirai）</span>
 
-### requirement
+### requirements
 - pandas
 - pillow
 - matplotlib
@@ -33,7 +33,7 @@
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
 ```
 3. 切换到mcl目录运行，命令一般为java -jar mcl.jar
-4. 使用 autoLogin 账号 密码 添加账号
+4. 使用命令autoLogin添加账号：autoLogin 账号 密码 
 5. 在以下该路径创建文件并填写下面的配置
 6. 你的MiraiConsoleLoader\config\net.mamoe.mirai-api-http\setting.yml
 7. 重启mcl
@@ -57,7 +57,7 @@ adapterSettings:
     reservedSyncId: -1
 ```
 
-### 本项目   
+### 运行本项目   
 <blockquote>
 下载本项目并切换到项目目录<br>
 修改config.py文件 <del>（内有注释）</del><br>
