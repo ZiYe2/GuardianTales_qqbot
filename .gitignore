@@ -2,4 +2,4 @@
 __pycache__/
 .idea/
 .gitignore
-.ziye_config.py
+ziye_config.py
