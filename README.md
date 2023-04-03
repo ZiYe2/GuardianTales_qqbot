@@ -27,7 +27,7 @@
 - matplotlib
 
 ### mirai使用
-1. 有任何步骤失败请前往mirai论坛查找解决方法 -> 
+1. 有任何步骤失败请前往[mirai](https://github.com/mamoe/mirai)论坛查找解决方法
 2. 下载[Mirai Console Loader（mcl）](https://github.com/iTXTech/mirai-console-loader)并安装[mirai-api-http](https://github.com/project-mirai/mirai-api-http)插件
 ```bash
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
