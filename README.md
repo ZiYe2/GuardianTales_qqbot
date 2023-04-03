@@ -8,7 +8,7 @@
 ## 效果图
 |       |       |       |
 | :---: | :---: | :---: |
-|![公会伤害](./readme/%E5%85%AC%E4%BC%9A%E4%BC%A4%E5%AE%B3.png)| ![出刀数](./readme/%E5%87%BA%E5%88%80%E6%95%B0.png)|![查刀](./readme/%E6%9F%A5%E5%88%80.png)|
+|![公会伤害](./readme/%E5%85%AC%E4%BC%9A%E4%BC%A4%E5%AE%B3.png)| ![出刀数](./readme/%E5%87%BA%E5%88%80%E6%95%B0.png)|![查刀](./readme/%E6%9F%A5%E5%88%80.jpg)|
 |![图片](./readme/%E5%9B%BE%E7%89%87.jpg)|![催刀](./readme/%E5%82%AC%E5%88%80.jpg)|![抽卡](./readme/%E6%8A%BD%E5%8D%A1.jpg)|
 |![兑换码](./readme/%E5%85%91%E6%8D%A2%E7%A0%81.jpg)|![短文](./readme/%E7%9F%AD%E6%96%87.jpg)|![前线](./readme/%E5%89%8D%E7%BA%BF.jpg)|
 
