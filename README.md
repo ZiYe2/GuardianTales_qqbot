@@ -26,17 +26,17 @@
 - pillow
 - matplotlib
 
-### mirai
-#### 有任何步骤失败请前往mirai论坛查找解决方法 -> 
-#### 下载[Mirai Console Loader（mcl）](https://github.com/iTXTech/mirai-console-loader)并安装[mirai-api-http](https://github.com/project-mirai/mirai-api-http)插件
+### mirai使用
+1. 有任何步骤失败请前往mirai论坛查找解决方法 -> 
+2. 下载[Mirai Console Loader（mcl）](https://github.com/iTXTech/mirai-console-loader)并安装[mirai-api-http](https://github.com/project-mirai/mirai-api-http)插件
 ```bash
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
 ```
 #### 切换到mcl目录运行，命令一般为java -jar mcl.jar
-使用 autoLogin 账号 密码 添加账号
-在以下该路径创建文件并填写下面的配置
-你的MiraiConsoleLoader\config\net.mamoe.mirai-api-http\setting.yml
-重启mcl
+3. 使用 autoLogin 账号 密码 添加账号
+4. 在以下该路径创建文件并填写下面的配置
+5. 你的MiraiConsoleLoader\config\net.mamoe.mirai-api-http\setting.yml
+6. 重启mcl
 ```yaml
 adapters:
   - http
