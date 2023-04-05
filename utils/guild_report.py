@@ -62,7 +62,7 @@ def guild_report(group_id, senderID, kind, text):
 def guild_report2(group_id, senderID, kind, text):
     msg = None
     if text == "菜单" or text == "menu":
-        msg = [["text", "[公会]\n前线(进度)|查刀(cd)|出刀数(cds)|兑换码|公会伤害|作业|催🔪|提醒\n[娱乐]\n寄|抽卡|涩涩|不可以涩涩|发癫"]]
+        msg = [["text", "[公会]\n前线(进度)|查刀(cd)|出刀数(cds)|兑换码|公会伤害|作业|催🔪|提醒\n[娱乐]\n寄|抽卡|涩涩|不可以涩涩|发癫\n开源地址：https://github.com/ZiYe2/GuardianTales_qqbot"]]
     
     elif '寄器人' in text or '寄寄人' in text:
         msg = [['@', senderID],["text", '恭喜你成为勇士战神候选人！通过试炼成为勇士战神，拯救世界吧！']]
@@ -193,14 +193,18 @@ def update_report():
                 knife['user_name'] = data['user_name']
                 knife['boss'] = data['boss']['elemental_type_cn'] + '·' + data['boss']['name']
                 knife['damage'] = data['damage']
-                role = re.findall("/portraits/(.+?).png", data['role_list'][0]['icon'])[0]
+                role_list = re.findall("/portraits/(.+?).png", data['role_list'][0]['icon'])
+                if role_list == []:
+                    role = "无名"
+                else: 
+                    role = role_list[0]
                 if role in role_translate.keys():
                     role = role_translate[role]
                 knife['role'] = role
                 t.append(knife)
             report[date] = t
-        except:
-            print(f"{date}更新失败")
+        except Exception as e:
+            print(f"{date}更新失败：\n{e}\n{traceback.format_exc()}")
 def update_all():
     update_report()
     update_t_report()
@@ -369,7 +373,10 @@ def cd(name, path="./image/guild/cd.png"):
     for knife in res.json()['data']:
         t = time.localtime(knife['log_time'])
         day = f"{t.tm_mon}.{t.tm_mday}"
-        role = re.findall(r'portraits/(.+?).png', knife['role_list'][0]['icon'])[0]
+        f role_list == []:
+            role = "无名"
+        else: 
+            role = role_list[0]
         if role in role_translate.keys():
             role = role_translate[role]
         boss = knife['boss']['elemental_type_cn'] + "·" + knife['boss']['name']
@@ -428,7 +435,7 @@ def cd(name, path="./image/guild/cd.png"):
                     day = index[0]
                     p_label[i] += [label]
                     label = ""
-                if damage != 0.0:
+                if (damage != 0.0).any().item():
                     if label != "":
                         label += "\n"
                     label += index[1] + "\n" + transform_damage(damage)
